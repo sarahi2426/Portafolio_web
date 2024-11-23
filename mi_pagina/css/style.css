@@ -1,0 +1,213 @@
+:root{
+   --color-primario:#e44f9c;
+   --color-secundario:#ff97d933;
+   --color-terceario:#c8c8c826;
+   --color-enlaces:#c8c8c8;
+   --funte-primaria:'Sofia', cursive;
+   --fuente-secundaria:'Delius', cursive; 
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    
+}
+.titulares{
+    padding:0.5rem;
+    height: 15vw;
+    background-color: white;
+}
+
+.logo img{
+    width: 8vw;
+    height: 8vw;
+    margin-top: 1vw;
+    margin-left: 3rem;
+}
+.icon-menu3{
+    margin-right: 2rem;
+    margin-top:3.5vw;
+    float: inline-start;
+    color: var(--color-primario);
+    float: right;
+    font-size: 4vw;
+}
+.icon-menu3:hover{
+    color:var(--color-enlaces) ;
+    cursor:pointer;
+
+}
+
+.nav{
+    width: 100%;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    transform: translateX(0);
+    margin-left: -70%;
+}
+.nav li{
+    margin: 2vw;
+}
+.nav ul{
+    list-style-type: none;
+}
+.menu{
+    text-decoration: none;
+    color: var(--color-primario);
+    font-family: var(--fuente-secundaria);
+    font-size: 20px;
+
+}
+.sub-menu a{
+    text-decoration: none;
+    color: var(--color-primario);
+    font-family: var(--fuente-secundaria);
+
+}
+details{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--color-primario);
+    font-family: var(--fuente-secundaria);
+}
+.nav a:hover{
+    color: var(--color-enlaces);
+}
+#check{
+    /*display: none;*/
+}
+#check:checked ~ .nav{
+    transform: translateX(100%);
+    margin: 0;
+}
+
+.titulo img{
+    width: 15%;
+    height: 15%;
+}
+.hero-img{
+    min-height: 80vw;
+    background-image: url(../img/DSC_1094.JPG);
+    background-size: 120% auto;
+    background-repeat: no-repeat;
+    color: white;
+}
+.hero-img div{
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0,0,0,30%);
+}
+.hero-img h1{
+    font-size: 5vw;
+    padding: 2.5rem;
+    font-family: var(--funte-primaria);
+}
+.sobremi{
+    padding-bottom: 7vw;
+    background-color:#ff97d933;
+    text-align: center;
+}
+.sobremi h2{
+    font-size: 5vw;
+    padding: 7vw;
+    font-family: var(--funte-primaria);
+    color: var(--color-primario);
+}
+.sobremi img{
+    width: 50vw;
+    height: 50vw;
+    border-radius: 150%;
+    margin-bottom: 3vw;
+    border-width: thick;
+    border-style: solid;
+    border-color: var(--color-primario);
+}
+.sobremi p{
+    color: var(--color-primario);
+    font-family: var(--fuente-secundaria);
+}
+.habilidades{
+    background-image: url(../img/fondo_habilidades30-01.png);
+    background-size: 100% auto;
+    background-attachment: fixed, scroll;
+    background-repeat: repeat-y;
+}
+.habilidades h2{
+    padding-top: 3vw;
+    text-align: center;
+    font-family: var(--funte-primaria);
+    font-size: 5vw;
+    color: var(--color-primario);
+}
+.circulo1{
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    margin-top: 0%;
+    margin: 8vw 4vw;
+}
+.circulo1 .progreso1{
+    margin: 0 auto;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border-left: 20px solid var(--color-primario);
+    border-right: 20px solid var(--color-secundario);
+    border-top: 20px solid var(--color-primario);
+    border-bottom: 20px solid var(--color-primario);
+    position: relative;
+    color: cyan;
+    text-align: center;
+}
+
+
+@media screen and (min-width:1025px) {
+
+    .titulares{
+        width: 100%;
+        height: 6.2vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo img{
+        width: 5vw;
+        height: 5vw;
+        margin-top: 0.1vw;
+        margin-left: 2rem;
+        
+    }
+
+    .nav ul{
+        display: flex;
+        transform: translateX(0);
+    }
+    .menu{
+        padding: 2rem;
+    }
+    summary{
+        padding-top: 2vw;
+    }
+    .sub-menu {
+ 
+        background-color:white;
+    }
+    .icon-menu3{
+        display: none;
+    }
+
+    
+}
